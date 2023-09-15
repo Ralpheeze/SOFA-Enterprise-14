@@ -1,0 +1,436 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+/* ----Start of Home container----- */
+.home-container {
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.2), #b49179 ); */
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+/* Define a maximum width for the container */
+@media (min-width: 576px) {
+    .home-container, .home-container2 {
+        max-width: 540px;
+        /* Adjust the value as needed for your design */
+    }
+}
+
+@media (min-width: 768px) {
+    .home-container, .home-container2 {
+        max-width: 720px;
+        /* Adjust the value as needed for your design */
+    }
+}
+
+@media (min-width: 992px) {
+    .home-container, .home-container2 {
+        max-width: 960px;
+        /* Adjust the value as needed for your design */
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-container, .home-container2 {
+        max-width: 1140px;
+        /* Adjust the value as needed for your design */
+    }
+}
+
+.home-img {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    /* height: 510px; */
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.home-header {
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    gap: 45rem;
+    justify-content: space-evenly;
+}
+
+.header1-list, .header2-list {
+    display: flex;
+    list-style: none;
+
+}
+
+.header1-list {
+    /* margin-top: 1rem; */
+    
+
+}
+
+.head1-list {
+    margin-right: 1rem;
+}
+
+.header2-list {
+    margin: 0;
+    margin-top: 15px;
+    /* background-color: red; */
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+}
+
+.head2-list {
+    display: flex;
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+.head2-href:link {
+    color: rgb(1, 111, 208);
+    text-decoration: none;
+}
+
+.head2-href:hover {
+    color: rgb(1, 111, 208);
+    text-decoration: none;
+}
+
+.head2-href:active {
+    color: rgb(1, 111, 208);
+    text-decoration: none;
+}
+
+.head2-href:visited {
+    color: rgb(1, 111, 208);
+    text-decoration: none;
+}
+
+.home-icon1 {
+    color: skyblue;
+}
+
+.home-icon2 {
+    color: black;
+}
+
+.home-icon3 {
+    color: rgb(182, 4, 129);
+}
+
+.home-icon4 {
+    color: red;
+}
+
+.book {
+    display: flex;
+}
+
+/* ----Start of nav------ */
+
+.nav-guard {
+    display: flex;
+    padding: 1rem;
+    /* overflow: hidden;     */
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Styles for the mobile toggle button */
+.navbar-toggler {
+    display: none;
+    /* Hide by default on larger screens */
+}
+
+/* Styles for the navigation links */
+.navbar-nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+        /* Show on smaller screens */
+        cursor: pointer;
+    }
+
+    .navbar-nav {
+        display: none;
+        /* Hide by default on smaller screens */
+        flex-direction: column;
+        background-color: #333;
+        /* Dark background color */
+        position: absolute;
+        top: 60px;
+        /* Adjust as needed based on your header height */
+        left: 0;
+        right: 0;
+    }
+
+    .navbar-nav.active {
+        display: flex;
+        /* Show when active (toggled) */
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .home-list {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .home-list.active {
+        display: flex;
+    }
+
+    .home-li {
+        margin: 10px 0;
+    }
+
+    .home-special {
+        position: static;
+        margin-left: 0;
+    }
+}
+
+/* ----End of nav------ */
+
+.home-list {
+    margin: 0;
+    margin-top: 6px;
+    /* background-color: red; */
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+}
+
+.home-li {
+    margin-right: 5rem;
+}
+
+.home-special {
+    list-style-type: none;
+    margin: 0;
+    margin-top: -1rem;
+    margin-left: -5rem;
+}
+
+.spe-href {
+    font-size: 60px;
+}
+
+.spe-href:link {
+    color: rgb(1, 111, 208);
+    text-decoration: none;
+}
+
+.spe-href:hover {
+    color: rgb(1, 111, 208);
+    text-decoration: none;
+}
+
+.spe-href:active {
+    color: rgb(1, 111, 208);
+    text-decoration: none;
+}
+
+.spe-href:visited {
+    color: rgb(1, 111, 208);
+    text-decoration: none;
+}
+
+.home-href {
+    font-size: 30px;
+}
+
+.home-href:link {
+    color: rgb(1, 111, 208);
+    text-decoration: none;
+}
+
+.home-href:hover {
+    color: rgb(1, 111, 208);
+    text-decoration: none;
+}
+
+.home-href:active {
+    color: rgb(1, 111, 208);
+    text-decoration: none;
+}
+
+.home-href:visited {
+    color: rgb(1, 111, 208);
+    text-decoration: none;
+}
+
+.home-tester1 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 80px;
+    left: 15px;
+    background-color: orange;
+}
+
+.home-tester2 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 80px;
+    left: 15px;
+    background-color: orange;
+}
+
+.home-content {
+    /* background-color: orange; */
+    padding: 2rem;
+    /* padding-left: 5rem; */
+    color: white;
+    
+    
+}
+
+.home-text {
+    /* background-color: blue; */
+    /* margin: auto; */
+    padding-left: 5rem;
+    width: 50%;
+    /* padding-right: 30rem; */
+}
+
+.home-title {
+    font-size: 20px;
+}
+
+.home-topic {
+    font-size: 25px;
+}
+
+.home-info {
+    font-size: 19px;
+}
+
+/* ----Start of Home container 2----- */
+.home-container2 {
+    /* background-color: rgb(235, 231, 231); */
+    margin-top: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    /* padding-right: 15px;
+    padding-left: 15px; */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style for columns on large screens (lg) */
+.lg-6 {
+    /* flex: 0 0 calc(50% - 20px); */
+    flex: 1;
+    /* 50% width with some spacing between columns */
+    margin: 10px;
+    /* Adjust as needed for spacing */
+}
+
+.scholar-guard {
+    display: grid;
+    /* margin: auto auto; */
+    
+}
+
+.scholar-col1 {
+    padding: 1rem;
+    background-color: rgb(255, 165, 0, 0.4);
+    /* opacity: 0.4; */
+}
+
+.scholar-col2 {
+    padding: 1rem;
+    background-color: rgba(0, 149, 255, 0.4);
+}
+
+.custom-text {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    /* equivalent to Bootstrap 'small' class */
+    /* equivalent to Bootstrap 'text-muted' class */
+    line-height: 1.4;
+}
+
+.horizontal-selects {
+    display: flex;
+    gap: 50px;
+    margin-top: 1rem;
+}
+
+.scholar-option {
+    width: 100px;
+    height: 30px;
+}
+
+.scholar-label {
+    margin-top: 1rem;
+}
+
+.scholar1-button {
+    text-align: right;
+    margin: 1rem;
+}
+
+.scholar-btn {
+    padding: 10px 20px;
+}
+
+/* Style for columns on medium screens (md) */
+@media (max-width: 768px) {
+    .md-12 {
+        flex: 0 0 calc(100% - 20px);
+        /* 100% width with some spacing between columns */
+        margin: 10px;
+        /* Adjust as needed for spacing */
+    }
+}
+
+/* Style for columns on small screens (sm) */
+@media (max-width: 576px) {
+    .sm-12 {
+        flex: 0 0 calc(100% - 20px);
+        /* 100% width with some spacing between columns */
+        margin: 10px;
+        /* Adjust as needed for spacing */
+    }
+}
+
+/* -----End of Home container 2----- */
+

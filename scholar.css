@@ -1,0 +1,492 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Create a custom container */
+.sch-container {
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.2), #b49179 ); */
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+/* Define a maximum width for the container */
+@media (min-width: 576px) {
+
+    .sch-container,
+    .sch-container2 {
+        max-width: 540px;
+        /* Adjust the value as needed for your design */
+    }
+}
+
+@media (min-width: 768px) {
+
+    .sch-container,
+    .sch-container2 {
+        max-width: 720px;
+        /* Adjust the value as needed for your design */
+    }
+}
+
+@media (min-width: 992px) {
+
+    .sch-container,
+    .sch-container2 {
+        max-width: 960px;
+        /* Adjust the value as needed for your design */
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .sch-container,
+    .sch-container2 {
+        max-width: 1140px;
+        /* Adjust the value as needed for your design */
+    }
+}
+
+.sch-img {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    /* height: 510px; */
+    object-fit: cover;
+    min-width: 100%;
+    /* min-height: 20vh; */
+}
+
+.sch-header {
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    gap: 45rem;
+    justify-content: space-evenly;
+}
+
+.header1-list,
+.header2-list {
+    display: flex;
+    list-style: none;
+
+}
+
+.header1-list {
+    /* margin-top: 1rem; */
+
+
+}
+
+.head1-list {
+    margin-right: 1rem;
+}
+
+.header2-list {
+    margin: 0;
+    margin-top: 15px;
+    /* background-color: red; */
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+}
+
+.head2-list {
+    display: flex;
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+.head2-href:link {
+    color: white;
+    text-decoration: none;
+}
+
+.head2-href:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.head2-href:active {
+    color: white;
+    text-decoration: none;
+}
+
+.head2-href:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.sch-icon1 {
+    font-size: 20px;
+    color: rgb(70, 198, 249);
+}
+
+.sch-icon2 {
+    font-size: 20px;
+    color: black;
+}
+
+.sch-icon3 {
+    font-size: 20px;
+    color: rgb(243, 10, 173);
+}
+
+.sch-icon4 {
+    font-size: 20px;
+    color: rgb(246, 56, 56);
+}
+
+.book {
+    display: flex;
+}
+
+/* ----Start of nav------ */
+
+.nav-guard {
+    display: flex;
+    padding: 1rem;
+    /* overflow: hidden;     */
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Styles for the mobile toggle button */
+.navbar-toggler {
+    display: none;
+    /* Hide by default on larger screens */
+}
+
+/* Styles for the navigation links */
+.navbar-nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+        /* Show on smaller screens */
+        cursor: pointer;
+    }
+
+    .navbar-nav {
+        display: none;
+        /* Hide by default on smaller screens */
+        flex-direction: column;
+        background-color: #333;
+        /* Dark background color */
+        position: absolute;
+        top: 60px;
+        /* Adjust as needed based on your header height */
+        left: 0;
+        right: 0;
+    }
+
+    .navbar-nav.active {
+        display: flex;
+        /* Show when active (toggled) */
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .sch-list {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sch-list.active {
+        display: flex;
+    }
+
+    .sch-li {
+        margin: 10px 0;
+    }
+
+    .sch-special {
+        position: static;
+        margin-left: 0;
+    }
+}
+
+/* ----End of nav------ */
+
+.sch-list {
+    margin: 0;
+    margin-top: 6px;
+    /* background-color: red; */
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+}
+
+.sch-li {
+    margin-right: 5rem;
+}
+
+.sch-special {
+    list-style-type: none;
+    margin: 0;
+    margin-top: -1rem;
+    margin-left: -5rem;
+}
+
+.spe-href {
+    font-size: 60px;
+}
+
+.spe-href:link {
+    color: white;
+    text-decoration: none;
+}
+
+.spe-href:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.spe-href:active {
+    color: white;
+    text-decoration: none;
+}
+
+.spe-href:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.sch-href {
+    font-size: 30px;
+}
+
+.sch-href:link {
+    color: white;
+    text-decoration: none;
+}
+
+.sch-href:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.sch-href:active {
+    color: white;
+    text-decoration: none;
+}
+
+.sch-href:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.sch-tester1 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 80px;
+    left: 15px;
+    background-color: orange;
+}
+
+.sch-tester2 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 80px;
+    left: 15px;
+    background-color: orange;
+}
+
+.sch-content {
+    /* background-color: orange; */
+    padding: 2rem;
+    /* padding-left: 5rem; */
+    color: white;
+
+
+}
+
+.sch-text {
+    /* background-color: blue; */
+    /* margin: auto; */
+    padding-left: 5rem;
+    width: 50%;
+    /* padding-right: 30rem; */
+}
+
+.sch-title {
+    font-size: 20px;
+}
+
+.sch-topic {
+    font-size: 25px;
+}
+
+.sch-info {
+    font-size: 19px;
+}
+
+/* ----Start of row----- */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style for the first column on large screens (lg) */
+.lg-10 {
+    flex: 0 0 calc(83.33% - 20px);
+    /* 83.33% width with some spacing between columns */
+    margin: 10px;
+    /* Adjust as needed for spacing */
+}
+
+/* Style for the second column on large screens (lg) */
+.lg-2 {
+    flex: 0 0 calc(16.67% - 20px);
+    /* 16.67% width with some spacing between columns */
+    margin: 10px;
+    /* Adjust as needed for spacing */
+}
+
+/* Style for columns on medium screens (md) */
+@media (max-width: 768px) {
+    .md-12 {
+        flex: 0 0 calc(100% - 20px);
+        /* 100% width with some spacing between columns */
+        margin: 10px;
+        /* Adjust as needed for spacing */
+    }
+}
+
+/* Style for columns on small screens (sm) */
+@media (max-width: 576px) {
+    .sm-12 {
+        flex: 0 0 calc(100% - 20px);
+        /* 100% width with some spacing between columns */
+        margin: 10px;
+        /* Adjust as needed for spacing */
+    }
+}
+
+.scholar-guard {
+    display: grid;
+    margin: auto auto;
+}
+
+.scholar-col1 {
+    margin-top: 3rem;
+    background-color: rgb(255, 165, 0, 0.4);
+    /* opacity: 0.4; */
+}
+
+.scholar-col2 {
+    margin-top: 3rem;
+    background-color: rgba(0, 149, 255, 0.4);
+}
+
+.scholar-head-spe {
+    font-size: 25px;
+}
+
+.horizontal-selects {
+    display: flex;
+    gap: 30px;
+    margin-top: 1rem;
+}
+
+.scholar-option {
+    width: 150px;
+    height: 30px;
+}
+
+.scholar-label {
+    margin-top: 1rem;
+}
+
+.scholar1-button {
+    text-align: right;
+    margin: 1rem;
+}
+
+.scholar-btn {
+    padding: 10px 20px;
+}
+
+.sch-table {
+    margin-top: 3rem;
+    border: 2px gray solid;
+}
+
+.table-row {
+    border: 2px gray solid;
+}
+
+.table-head {
+    border: 2px gray solid;
+}
+
+.table-data {
+    border: 2px gray solid;
+}
+.table-page {
+    display: flex;
+    list-style-type: none;
+}
+
+.table-li {
+    text-align: center;
+    border: 1px gray solid;
+    width: 20px;
+    height: 20px;
+}
+
+.table-li:hover {
+    background-color: rgb(185, 183, 183);
+}
+
+
+.table-num:link {
+    color: blue;
+    text-decoration: none;
+}
+
+.table-num:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+.table-num:active {
+    color: blue;
+    text-decoration: none;
+}
+
+.table-num:visited {
+    color: rgb(79, 79, 239);
+    text-decoration: none;
+}
